@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ni5-Xh-ueO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--PayChecker-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="PayChecker" id="BYZ-38-t0r" customClass="ViewController" customModule="Paychecker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours Worked" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXJ-pa-oVi">
+                                <rect key="frame" x="20" y="376" width="177" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4f-Qx-FTe">
+                                <rect key="frame" x="20" y="499" width="84" height="46"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" semanticContentAttribute="spatial" showsSelectionIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbl-Dg-USW">
+                                <rect key="frame" x="1" y="152" width="600" height="216"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="XrB-OT-JiO"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Per Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aan-v1-ZSp">
+                                <rect key="frame" x="471" y="376" width="109" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9MK-cI-FcE">
+                                <rect key="frame" x="20" y="479" width="560" height="3"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="cuB-VN-NBQ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PayChecker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uv-od-I7v">
+                                <rect key="frame" x="203" y="45" width="195" height="41"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wT8-SW-aRZ">
+                                <rect key="frame" x="474" y="499" width="106" height="46"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.55294117647058827" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="9MK-cI-FcE" firstAttribute="centerX" secondItem="9uv-od-I7v" secondAttribute="centerX" id="6BT-Qd-8u2"/>
+                            <constraint firstItem="sXJ-pa-oVi" firstAttribute="top" secondItem="Hbl-Dg-USW" secondAttribute="bottom" constant="8" symbolic="YES" id="A6M-Td-HGM"/>
+                            <constraint firstItem="wT8-SW-aRZ" firstAttribute="trailing" secondItem="9MK-cI-FcE" secondAttribute="trailing" id="F10-OJ-GdG"/>
+                            <constraint firstItem="9uv-od-I7v" firstAttribute="centerX" secondItem="Hbl-Dg-USW" secondAttribute="centerX" id="FGI-F6-0Cx"/>
+                            <constraint firstItem="l4f-Qx-FTe" firstAttribute="baseline" secondItem="wT8-SW-aRZ" secondAttribute="baseline" id="HUb-4y-zRP"/>
+                            <constraint firstItem="wT8-SW-aRZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="O6X-h9-Z5l"/>
+                            <constraint firstItem="aan-v1-ZSp" firstAttribute="baseline" secondItem="sXJ-pa-oVi" secondAttribute="baseline" id="cDr-Fy-7ae"/>
+                            <constraint firstItem="9MK-cI-FcE" firstAttribute="leading" secondItem="sXJ-pa-oVi" secondAttribute="leading" id="fkV-55-qGm"/>
+                            <constraint firstItem="Hbl-Dg-USW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-19" id="g7G-jU-mGa"/>
+                            <constraint firstItem="l4f-Qx-FTe" firstAttribute="top" secondItem="9MK-cI-FcE" secondAttribute="bottom" constant="17" id="gYS-iN-w0G"/>
+                            <constraint firstItem="sXJ-pa-oVi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nia-w7-0sS"/>
+                            <constraint firstItem="9uv-od-I7v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="pLy-p5-Utw"/>
+                            <constraint firstItem="Hbl-Dg-USW" firstAttribute="top" secondItem="9uv-od-I7v" secondAttribute="bottom" constant="66" id="qdH-bW-z1B"/>
+                            <constraint firstItem="9MK-cI-FcE" firstAttribute="top" secondItem="sXJ-pa-oVi" secondAttribute="bottom" constant="69" id="rW3-Xa-tMT"/>
+                            <constraint firstItem="9MK-cI-FcE" firstAttribute="leading" secondItem="l4f-Qx-FTe" secondAttribute="leading" id="uOa-vV-tlG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="l4f-Qx-FTe" secondAttribute="bottom" constant="55" id="uo6-s7-19e"/>
+                            <constraint firstItem="aan-v1-ZSp" firstAttribute="trailing" secondItem="9MK-cI-FcE" secondAttribute="trailing" id="wkO-G2-Y9H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PayChecker" id="5t6-IV-QYT"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="pickerView" destination="Hbl-Dg-USW" id="MEd-gr-Jvk"/>
+                        <outlet property="total" destination="wT8-SW-aRZ" id="dJC-67-GV4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="-380"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ShR-im-Gx7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Ni5-Xh-ueO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="7i0-Ti-Jth">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2N8-Mf-LZi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iy4-vs-Tp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="-380"/>
+        </scene>
+    </scenes>
+</document>
